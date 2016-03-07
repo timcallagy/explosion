@@ -445,7 +445,7 @@ section {
 .hero-unit h1{
     font-size: 70px;
     font-weight: 200;
-    margin-top: 70px;
+    margin-top: 25px;
 }
 .hero-start-link,
 .hero-start-link:focus {
@@ -674,12 +674,12 @@ section {
 /*-----  End of Buttons  ------*/
 
 .img-hero {
-    background-image: url('../img/mockup4.png');
+    background-image: url('../img/Explosion_mockup.png');
     background-repeat: no-repeat;
     background-position: center top !important;
     text-align: center;
     padding-top: 100px;
-    height: 400px;
+    height: 420px;
 
 }
 @media (max-width: 767px) {
