@@ -29,8 +29,11 @@ turquoise
 .bg-dark {
   background-color: #202020;
 }
-.bg-shop {
-  background-color: #F8C516;
+  .bg-shop {
+  /*background-color: #F8C516;*/
+  background-image: url("../img/background.png");
+  background-size: 50%;
+  background-repeat: repeat;
 }
 .bg-turquoise {
   background-color: #1abc9c;
