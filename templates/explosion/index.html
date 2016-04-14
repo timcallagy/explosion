@@ -2,9 +2,9 @@
 <html>
 <head>
     {% load static %} 
-    <title>TicTicBOOM - the card game!</title>
+    <title>PEEKABOOM - the card game!</title>
     <meta charset="utf-8">
-    <meta name="description" content="TicTicBOOM - the card game!">
+    <meta name="description" content="PEEKABOOM - the card game!">
     <meta name="author" content="explosion">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- core styles -->
@@ -49,8 +49,8 @@
           <ul>
             <li><a href="#home" class="smooth-scroll">Home</a></li>
             <li><a href="#start" class="smooth-scroll">Game Description</a></li>
-            <li><a href="#showcase" class="smooth-scroll">Showcase</a></li>
-            <li><a href="#features" class="smooth-scroll">Features</a></li>
+            <li><a href="#showcase" class="smooth-scroll">What's in the box</a></li>
+            <li><a href="#features" class="smooth-scroll">Game Rules</a></li>
             <li><a href="#contact" class="smooth-scroll">Contact</a></li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="hero-unit ">
-                                    <h1><img style="width:50%" src="{% static "img/ticticboom.png" %}"></h1>
+                                    <h1><img style="width:50%" src="{% static "img/Peekaboom.png" %}"></h1>
 								<h3><b>
                                         The fast and outrageously fun strategy card game!</b><br><br>
 								Game Play by Tim and Masha Callagy<br>
@@ -73,7 +73,7 @@
 						</div>	
                     </div>
                     <div class="col-md-12 js-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0dmTZUxtLr8" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/03P7ZrornK4" frameborder="0" allowfullscreen></iframe>
                         <br>
                         <br>
                         <br>
@@ -102,7 +102,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <br>
                         <p>
-                        TicTicBOOM is a fast and outrageously fun strategy game where you work with your partner to assemble and detonate your explosive device before your opponents can detonate theirs.<br><br>
+                        PEEKABOOM is a fast and outrageously fun strategy game where you work with your partner to assemble and detonate your explosive device before your opponents can detonate theirs.<br><br>
                         Sounds easy? Not so fast! You need to use secret signals to let your partner know when your device is ready to explode. Don’t make it too obvious or you’ll get caught. But if it’s not obvious enough, your partner won’t notice it… And don’t forget to watch  your opponents or you’ll miss their secret signals! 
                         </p>
 					</div>
@@ -166,7 +166,99 @@
 			<div class="container padding-top-bottom">
 				<div class="row header">
 					<div class="col-md-12">
-						<h2>Features</h2>
+						<h2>Game Rules</h2>
+                        <a href="www.playPEEKABOOM.com/rules">Click here to watch a video of the game rules!</a>
+                            <h3 style="text-align:left">1. Objective</h3>
+                            <p style="text-align:left">Collect 3 cards of the same type and send a secret signal to your partner without your opponents noticing. If your partner sees the signal and says ‘BOOM!’, your team wins the round and gets a point. You can also win points if you say ‘SNIP!’ when you think one of your opponents has 3 cards of the same type. The team with the most points at the end of the game wins.</p>
+
+                            <h3 style="text-align:left">2. Game Setup</h3>
+                            <div class="row">
+                            <div class="col-md-6">
+                            <p style="text-align:left">
+                            &bull; Form teams with 2 players in each team. <br>
+                            &bull; The dealer removes the blank Signal cards, shuffles the Signals deck and gives 1 signal card to each team. The team members can pass the signal card between themselves but must not let the other teams know their signal. <br>
+                            &bull; The dealer then shuffles the Explosives deck and roughly divides the cards between all players. <br>
+                            </p>
+                            </div>
+                                <div class="col-md-3">
+                                    <img style="width:50%" src="{% static "img/backcard_explosives.png" %}">
+                                    <p>Explosives deck </p>
+                            </div>
+                                <div class="col-md-3">
+                                    <img style="width:67%"  src="{% static "img/backcard_signals.png" %}">
+                                    <p>Signals deck </p>
+                                 </div>
+                            </div>
+                        </div>
+
+                            <h3 style="text-align:left">3. Game Play</h3>
+                                <h4 style="color:red; text-align:left">Starting a round</h4>
+                                    <p style="text-align:left">
+                                        To start a round, a player takes 3 cards from the top of their Explosives card stack. These 3 cards form the player’s hand. Then the player takes 1 card from the top of his or her stack and places it face up in the center of the table. As soon as a player has placed their card in the center of the table, that player is allowed to start collecting cards placed by others. The goal is to collect 3 of a kind.
+                                    </p>
+                                <h4 style="color:red; text-align:left">Collecting 3 of a kind</h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p style="text-align:left">
+                                    To collect a card, the player places a card from their hand face up on the table, and collects any card from the cards on the table. There are no turns. A player can play and collect a card at any time during a round as many times as they want. When the cards in the center of the table are no longer needed by any player, each player takes one card from the table, and places it face down at the bottom of their stack. Each player then takes 1 card from the top of their stack, places it face up on the center of the table, and the game continues.
+                                    </p>
+                                 </div>
+                                <div class="col-md-4">
+                                    <img style="width:67%"  src="{% static "img/redcards.png" %}">
+                                 </div>
+                                 </div>
+                                <h4 style="color:red; text-align:left">Finishing a round</h4>
+                                <p style="text-align:left">
+                                A round finishes when a player sees a Signal performed by another player and shouts ‘BOOM!’, ‘SNIP!’ or ‘PEEKABOOM!’. The points are awarded, then the cards in the centre of the table and the cards in players’ hands are gathered, shuffled and dealt to the players. The players put these cards at the bottom of their card stack, and are then ready to start the next round. 
+                                </p>
+
+                                <h3 style="text-align:left">4. Signals and Points</h3>
+                                <p style="text-align:left">
+                                &bull;    If a player has collected 3 of a kind, the player performs the action described on that team’s Signal card, without the other teams noticing. If the player’s partner sees the Signal, the partner must shout ‘BOOM!’. The 3 cards are placed face up on the table for the other players to see.<br>
+                              &bull;   If a player sees another team making a Signal, that player can shout ‘SNIP!’. The other team places their cards face up on the table. If the person who shouted ‘SNIP!’ is correct, their team wins the round. The other team discards their Signal card and takes another card from the Signal deck.<br>
+                              &bull;   If each player in a team has collected 3 of a kind, and one of the team members shouts ‘PEEKABOOM!’, the team wins the round. The 6 cards are placed face up on the table.<br>
+                              &bull;  If a player mistakenly shouts any of these words, the other team(s) get the corresponding number of points.<br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                <table class="table table-bordered table-condensed">
+                                    <thead><tr>
+                                            <th style="color:#ff3333; text-align:center">BOOM!</th>
+                                            <th style="color:#ff3333; text-align:center">SNIP!</th>
+                                            <th style="color:#ff3333; text-align:center">PEEKABOOM!</th>
+                                    </tr></thead>
+                                    <tbody><tr>
+                                            <th style="text-align:center">1 Point</th>
+                                            <th style="text-align:center">2 Points</th>
+                                            <th style="text-align:center">3 Points</th>
+                                    </tr></tbody>
+                                  </table>
+                                  </div>
+                                  </div>
+
+
+                                  <h3 style="text-align:left">5. Winning the game</h3>
+                                  <p style="text-align:left">
+                                  The first team to get 10 points (for a 4 player game) or 7 points (for a 6 player game) wins.
+                                  </p>
+
+                                  <h3 style="text-align:left">6. Strategies and Advanced gameplay</h3>
+                                  <p style="text-align:left">
+                                  &bull;    Bluff! Send fake signals to make your opponents mistakenly say ‘SNIP!’. <br>
+                                &bull;     Watch what explosives your opponents are collecting. Enjoy the look of surprise on their faces when you say ‘SNIP!’ before they have even made their signal. <br>
+                                &bull;     Alternatively, if you see an opponent collecting a particular explosive, grab it when it appears on the table before they manage to grab it themselves.  <br>
+                                &bull;     Even better, if you already have an opponent’s card in your hand, play it and say ‘SNIP!’ as soon as he or she picks it up. <br>
+                               &bull;      You should also watch what your partner is collecting, maybe you have a card he or she can use. <br>
+                                &bull;     Watch for players who aren’t collecting any cards, they probably have collected 3 of a kind already. <br>
+                               &bull;      Confuse your opponent by constantly dropping and collecting extra cards so that they can’t see what explosives you are really collecting. <br>
+                               &bull;      There are blank signal cards in the Signals deck. Make up your own signals. <br>
+                              &bull;       For more advanced players - don’t use the Signals deck at all! Each team makes up 3 Signals before the game and uses them from start to finish. <br>
+                                  </p>
+
+
+
+
+                            <!--
 						<p>We are here for you</p>
 					</div>
 				</div>
@@ -193,6 +285,8 @@
 			                    <p>Grenade wonton soup faded disposable dome cardboard spook refrigerator dolphin.</p>
 			                </article>
 			            </div>
+-->                     
+                    
 		            </div>             
         		</div>
 			</div>	
@@ -367,7 +461,7 @@
                         <img src="{% static "img/Pay_popup_image.png" %}" alt="" class="img-responsive">
 		            </div>
 		            <div class="modal-body">
-		                <h3 class="text-center"><b>TicTicBOOM - Card Game </b>($20,00)</h3>
+		                <h3 class="text-center"><b>PEEKABOOM - Card Game </b>($20,00)</h3>
 		            </div>
 		            <div class="modal-footer">
 		                <form id="buy" action="buy" class="myform" method="post" novalidate>

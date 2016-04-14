@@ -78,10 +78,6 @@ p{
     margin-bottom: 15px;
 }
 
-li {
-    font-family: 'Source Sans Pro Light', sans-serif;
-}
-
 code {
     padding: 2px 4px;
     color: #c6463d;
