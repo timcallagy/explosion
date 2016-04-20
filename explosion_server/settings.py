@@ -89,6 +89,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'explosion_server.wsgi.application'
 
+MANDRILL_API_KEY = os.environ.get('MANDRILL_API_KEY')
+EMAIL_BACKEND = 'djrill.mail.backends.djrill.DjrillBackend'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases

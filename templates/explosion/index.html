@@ -70,7 +70,10 @@
                                     The fast and outrageously fun strategy card game!</b><br><br>
                                 Game Play by Tim and Masha Callagy<br>
                                 <p><br>
+                                <!--
                                 <a class="btn white" href="#" data-toggle="modal" data-target="#product-modal"><b>$20</b> BUY NOW</a>
+                                -->
+                                <a class="btn white" href="#" data-toggle="modal" data-target="#product-modal"><b>Get notified when launched</a>
                             </div>
                         </div>	
                     </div>
@@ -303,7 +306,7 @@
             <div class="row header">
                 <div class="col-md-12">
                     <h2>Contact us</h2>
-                    <p>Send an email to peekaboom.game <at> gmail.com</p>
+                    <p>Send an email to peekaboom.game@gmail.com</p>
                     <p>- OR -</p>
                     <p>Fill in the form below & we'll get back to you as soon as we can!</p>
                 </div>
@@ -314,13 +317,13 @@
                     <div id="alert-contact"> 
                         <div class="alert alert-success" role="alert"><strong>Your message has been sent.</strong></div>
                     </div>
-                    <form id="contact-form" action="sendemail.php" class="myform" method="post" novalidate>
+                    <form id="contact-form" action="/contact_us/" class="myform" method="post" novalidate> {% csrf_token %}
                         <div class="row clearfix">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
                                     <label class="control-label">Name</label>
                                     <div class="controls">
-                                        <input name="contactName" placeholder="Your name" class="form-control input-lg requiredField" type="text" data-error-empty="Enter name">
+                                        <input name="name" placeholder="Your name" class="form-control input-lg requiredField" type="text" data-error-empty="Enter name">
                                     </div>
                                 </div>
                             </div>
@@ -328,15 +331,15 @@
                                 <div class="form-group">
                                     <label class="control-label" for="contact-mail">Email</label>
                                     <div class=" controls">
-                                        <input name="email" placeholder="Your email" class="form-control input-lg requiredField" type="email" data-error-invalid="Invalid email address" data-error-empty="Enter email">
+                                        <input name="email_address" placeholder="Your email" class="form-control input-lg requiredField" type="email" data-error-invalid="Invalid email address" data-error-empty="Enter email">
                                     </div>
                                 </div>
                             </div>	
                         </div>	
                         <div class="form-group">
-                            <label class="control-label" for="contact-message">Message</label>
+                            <label class="control-label" for="message">Message</label>
                             <div class="controls">
-                                <textarea name="comments" placeholder="Your message" class="form-control input-lg requiredField" rows="5" data-error-empty="Enter message"></textarea>
+                                <textarea name="message" placeholder="Your message" class="form-control input-lg requiredField" rows="5" data-error-empty="Enter message"></textarea>
                             </div>
                         </div>
                         <p><button name="submit" type="submit" class="btn btn-store btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Send Message</button></p>
@@ -393,7 +396,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <div class="modal fade" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
         <div class="modal-dialog modal-sm2">
             <div class="modal-content">
@@ -401,7 +404,6 @@
                     <a class="close-modal" href="#" data-dismiss="modal">
                         <span class="menu-icon"></span>
                     </a>
-                    <!-- <img src="{% static "img/cup1.jpg" %}" alt="" class="img-responsive"> -->
                     <img src="{% static "img/Pay_popup_image.png" %}" alt="" class="img-responsive">
                 </div>
                 <div class="modal-body">
@@ -431,7 +433,39 @@
             </div>
         </div>
     </div>
-
+    -->
+ <div class="modal fade" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm2">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close-modal" href="#" data-dismiss="modal">
+                        <span class="menu-icon"></span>
+                    </a>
+                    <img src="{% static "img/Pay_popup_image.png" %}" alt="" class="img-responsive">
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center"><b>PEEKABOOM - Card Game </b>($20,00)</h3>
+                    <br>
+                    <p>We're launching our Kickstarter campaign soon! Subscribe to Updates and we'll let you know when we're live on Kickstarter!</p>
+                </div>
+                <div class="modal-footer">
+                    <form id="buy" action="buy" class="myform" method="post" novalidate>
+                        <div class="form-group">
+                            <label class="control-label" for="contact-mail">Email</label>
+                            <div class=" controls">
+                                <input name="email_address" placeholder="Email" class="form-control input-lg requiredField" type="email" data-error-invalid="Invalid email address" data-error-empty="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-block">Subscribe to Updates</button>
+                        </div>
+                        <p class="text-center"><a href="" data-dismiss="modal">Cancel</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- Core scrips -->
