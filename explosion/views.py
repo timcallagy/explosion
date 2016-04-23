@@ -21,6 +21,13 @@ def contact_us(request):
         send_explosion_email('timcallagy@gmail.com', 'Someone has contacted you through playpeekaboom.com', 'email', {'name': name, 'email_address': email_address, 'message': message }, True)
     return HttpResponse('Ok')
 
+def subscribe(request):
+    if request.method == 'POST':
+        print(request)
+        email_address = request.POST['subscriber_email']
+        send_explosion_email('timcallagy@gmail.com', 'Someone has subscribed through playpeekaboom.com', 'email', {'email_address': email_address}, True)
+    return HttpResponse('Ok')
+
 ################################
 ###
 ###  Functions
