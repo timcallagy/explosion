@@ -460,7 +460,7 @@
                         <div class="alert alert-success" role="alert"><strong>You have been subscribed</strong></div>
                     </div>
                     <div class="modal-footer">
-                        <form id="buy" action="/subscribe/" class="myform" method="post" novalidate> {% csrf_token %}
+                        <form id="subscribe-form" action="/subscribe/" class="myform" method="post" novalidate> {% csrf_token %}
                             <div class="form-group">
                                 <label class="control-label" for="contact-mail">Email</label>
                                 <div class=" controls">
@@ -495,6 +495,7 @@ function subscribe() {
         console.log("state changed");
         if (xhr.readyState == 4 && xhr.status == 200) {
             document.getElementById("alert-subscribe").style.display = "block";
+            document.getElementById("subscribe-form").style.display = "none";
         }
     }
 }

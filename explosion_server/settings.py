@@ -90,7 +90,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'explosion_server.wsgi.application'
 
 MANDRILL_API_KEY = os.environ.get('MANDRILL_API_KEY')
-EMAIL_BACKEND = 'djrill.mail.backends.djrill.DjrillBackend'
+#EMAIL_BACKEND = 'djrill.mail.backends.djrill.DjrillBackend'
+EMAIL_BACKEND = 'sgbackend.SendGridBackend'
+SENDGRID_USER = os.environ.get('SENDGRID_USER')
+SENDGRID_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
+
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
